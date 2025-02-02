@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -38,52 +38,56 @@
         .font-sora {
             font-family: "Sora", serif;
         }
-        .banner-title{
+
+        .banner-title {
             animation: typing 1s 0s infinite alternate;
         }
+
         @keyframes typing {
             from {
-                width:0
+                width: 0
             }
         }
     </style>
 </head>
 
 <body class="font-sora">
-    <header>
+    <header class="relative">
         <!-- navbar-section -->
         <nav class="bg-[#FFF9F4] border-b-4 lg:border-hidden mb-10">
-            <div class=" mx-auto flex items-center justify-between px-6 md:px-14">
+            <div class="md:container mx-auto flex items-center justify-between px-6 md:px-14">
                 <div class="flex items-center">
                     <img src="c1-assets/logo-header.png" alt="">
                     <div class=" lg:flex">
-                        <h2 class="text-2xl font-sora">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+                        <h2 class="hidden lg:flex text-2xl font-sora">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
                     </div>
                 </div>
                 <div class="hidden lg:flex">
                     <ul class="flex gap-4 font-sora">
-                        <li><a href="">Find a pet</a></li>
-                        <li><a href="">Breeds</a></li>
-                        <li><a href="">Contact us</a></li>
+                        <li class="hover:scale-110 "><a href="">Find a pet</a></li>
+                        <li class="hover:scale-110 "><a href="">Breeds</a></li>
+                        <li class="hover:scale-110 "><a href="">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="hidden lg:flex gap-4 justify-center items-center">
-                    <a href=""><i class="fa-regular fa-bell"></i></a>
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <button class="border font-sora border-orange-200 hover:bg-sky-400 px-4 py1 rounded-lg">Login</button>
+                    <a href=""><i class="hover:scale-150 fa-regular fa-bell"></i></a>
+                    <a href=""><i class="hover:scale-150 fa-solid fa-magnifying-glass"></i></a>
+                    <button
+                        class="border font-sora border-orange-200 hover:bg-sky-400 px-4 py1 rounded-lg">Login</button>
                     <button class="bg-yellow-400 hover:bg-sky-400 font-sora px-4 py-1 rounded-lg">Register</button>
                 </div>
                 <div class="flex lg:hidden text-2xl font-bold">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="hover:scale-150 fa-solid fa-bars"></i>
                 </div>
             </div>
         </nav>
         <!-- banner-section -->
-        <div class="relative max-w-[100%]: mx-auto px-6 md:px-14">
+        <div class="md:container mx-auto px-6 md:px-14">
             <!-- banner-content -->
             <!-- class="absolute z-40" -->
-            <div class="absolute z-40">
-                <h1 class="banner-title font-adlam-display text-3xl font-bold mb-4">Pamper Your Pet, <br> Because They Deserve <br>
+            <div class="lg:absolute z-40">
+                <h1 class="banner-title font-adlam-display text-3xl font-bold mb-4">Pamper Your Pet, <br> Because They
+                    Deserve <br>
                     the Bes</h1>
                 <p class="font-sora text-gray-500 mb-4">Discover a world of treats, toys, and essentials handpicked for
                     <br> your furry friends. Shop now and make tails wag with joy!
@@ -99,7 +103,7 @@
     <main>
         <!-- browse section -->
         <section>
-            <div class="max-[100%]:mx-auto my-8 px-6 md:px-14">
+            <div class="md:container mx-auto my-8 px-6 md:px-14">
                 <div class="mb-5">
                     <h5 class="text-2xl font-bold font-adlam-display">Browse By Categories</h5>
                 </div>
@@ -174,63 +178,61 @@
             </div>
         </section>
         <!-- care section -->
-         <section class="bg-sky-100">
-            <div class="mx-auto px-6 md:px-14">
+        <section class="bg-sky-100">
+            <div class="md:container mx-auto px-6 md:px-14">
                 <div class="p-4 mb-4">
                     <h5 class="text-2xl font-bold font-adlam-display">Take Care of Pets</h5>
                 </div>
-               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 py-6 lg:flex-row">
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="c1-assets/girl-with-cat.jpg"
-                        alt="Cat" />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Loving Pets</h2>
-                      <p>"Unbreakable bond: A baby and their furry best friend!"</p>
-                      <div class="card-actions justify-end">
-                        <button class="bg-yellow-400 hover:bg-sky-400 font-sora px-4 py-1 rounded-lg">Read More</button>
-                      </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:px-4 py-6 lg:flex-row">
+                    <div class="card bg-base-100 w-96">
+                        <figure>
+                            <img src="c1-assets/girl-with-cat.jpg" alt="Cat" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Loving Pets</h2>
+                            <p>"Unbreakable bond: A baby and their furry best friend!"</p>
+                            <div class="card-actions justify-end">
+                                <button class="bg-yellow-400 hover:bg-sky-400 font-sora px-4 py-1 rounded-lg">Read
+                                    More</button>
+                            </div>
+                        </div>
+
                     </div>
-                  
-               </div>
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="c1-assets/happy-young-man-looking-camera-showing-cute-dog-ears-feeling-rejoice-adopting-pet-standing-white-background.jpg"
-                        alt="Pet" />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Playing Pets</h2>
-                      <p>"Man’s best friend—loyalty in its purest form."</p>
-                      <div class="card-actions justify-end">
-                        <button class="bg-yellow-400 hover:bg-sky-400 font-sora px-4 py-1 rounded-lg">Read More</button>
-                      </div>
+                    <div class="card bg-base-100 w-96">
+                        <figure>
+                            <img src="c1-assets/happy-young-man-looking-camera-showing-cute-dog-ears-feeling-rejoice-adopting-pet-standing-white-background.jpg"
+                                alt="Pet" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Playing Pets</h2>
+                            <p>"Man’s best friend—loyalty in its purest form."</p>
+                            <div class="card-actions justify-end">
+                                <button class="bg-yellow-400 hover:bg-sky-400 font-sora px-4 py-1 rounded-lg">Read
+                                    More</button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="c1-assets/girl-with-dog.jpg"
-                        alt="Shoes" />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Caring Pets</h2>
-                      <p>"A heart full of love, a pet well cared for."</p>
-                      <div class="card-actions justify-end">
-                        <button class="bg-yellow-400 hover:bg-sky-400 font-sora px-4 py-1 rounded-lg">Read More</button>
-                      </div>
+                    <div class="card bg-base-100 w-96">
+                        <figure>
+                            <img src="c1-assets/girl-with-dog.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Caring Pets</h2>
+                            <p>"A heart full of love, a pet well cared for."</p>
+                            <div class="card-actions justify-end">
+                                <button class="bg-yellow-400 hover:bg-sky-400 font-sora px-4 py-1 rounded-lg">Read
+                                    More</button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                
-               </div>
+
+                </div>
 
             </div>
-         </section>
+        </section>
         <!-- trending section -->
         <section class="bg-[#FFF9F4]">
-            <div class="max-[100%]: mx-auto py-8 px-6 md:px-14 ">
+            <div class="md:container mx-auto py-8 px-6 md:px-14 ">
                 <div class="mb-5">
                     <h5 class="text-2xl font-bold font-adlam-display">Trending Pet Products</h5>
                 </div>
@@ -240,7 +242,8 @@
                         <div class="card-body">
                             <h2 class="card-title">T-Shirt For Dogs</h2>
                             <p>Discover a world of treats, toys, and <br> essentials handpicked for </p>
-                            <button class="border w-32 font-sora bg-white hover:bg-sky-400 px-4 py1 rounded-lg">Shop Now</button>
+                            <button class="border w-32 font-sora bg-white hover:bg-sky-400 px-4 py1 rounded-lg">Shop
+                                Now</button>
 
                             <div class=" card-actions justify-end">
 
@@ -251,9 +254,9 @@
                     <!--right column  -->
                     <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
                         <!-- card -->
-                        <div class="card card-side bg-base-100 px-2 py-1   ">
-                            <figure >
-                                <img class="p-4" src="c1-assets/dog-cartoon.png" alt="dog-cartoon" />
+                        <div class="card card-side bg-base-100">
+                            <figure>
+                                <img class="p-1 lg:p-4" src="c1-assets/dog-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -266,7 +269,7 @@
                         </div>
                         <div class="card card-side bg-base-100 ">
                             <figure>
-                                <img class="p-4" src="c1-assets/fish-cartoon.png" alt="dog-cartoon" />
+                                <img class="p-1 lg:p-4" src="c1-assets/fish-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -279,7 +282,7 @@
                         </div>
                         <div class="card card-side bg-base-100 ">
                             <figure>
-                                <img class="p-4" src="c1-assets/pet-couch.png" alt="dog-cartoon" />
+                                <img class="p-1 lg:p-4" src="c1-assets/pet-couch.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -292,7 +295,7 @@
                         </div>
                         <div class="card card-side bg-base-100 ">
                             <figure>
-                                <img class="p-4" src="c1-assets/rabbit-cartoon.png" alt="dog-cartoon" />
+                                <img class="p-1 lg:p-4" src="c1-assets/rabbit-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -305,7 +308,7 @@
                         </div>
                         <div class="card card-side bg-base-100 ">
                             <figure>
-                                <img class="p-4" src="c1-assets/bird-cartoon.png" alt="dog-cartoon" />
+                                <img class="p-1 lg:p-4" src="c1-assets/bird-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -318,7 +321,7 @@
                         </div>
                         <div class="card card-side bg-base-100 ">
                             <figure>
-                                <img class="p-4" src="c1-assets/mouse-cartoon.png" alt="dog-cartoon" />
+                                <img class="p-1 lg:p-4" src="c1-assets/mouse-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -331,7 +334,7 @@
                         </div>
                         <div class="card card-side bg-base-100 ">
                             <figure>
-                                <img class="p-4" src="c1-assets/fish-cartoon.png" alt="dog-cartoon" />
+                                <img class="p-1 lg:p-4" src="c1-assets/fish-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -344,7 +347,7 @@
                         </div>
                         <div class="card card-side bg-base-100 ">
                             <figure>
-                                <img class="p-4"  src="c1-assets/mouse-cartoon.png" alt="dog-cartoon" />
+                                <img class="p-1 lg:p-4" src="c1-assets/mouse-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -355,9 +358,9 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        <div class="card card-side bg-base-100 ">
+                        <div class="hidden lg:flex card card-side bg-base-100 ">
                             <figure>
-                                <img class="p-4" src="c1-assets/rabbit-cartoon.png" alt="dog-cartoon" />
+                                <img class="p-1 lg:p-4" src="c1-assets/rabbit-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -377,7 +380,7 @@
         </section>
         <!-- price section -->
         <section>
-            <div class="mx-auto mb-40  py-8 px-6 md:px-14">
+            <div class="md:container mx-auto mb-40  py-8 px-6 md:px-14">
                 <div class="mb-5">
                     <h5 class="text-2xl font-bold font-adlam-display">Everyday low Price</h5>
                 </div>
@@ -454,18 +457,18 @@
                     </div>
                     <div>
                         <ul class=" text-white gap-16 font-sora">
-                            <li class="py-2"><a href="">Find a pet</a></li>
-                            <li class="py-2"><a href="">Breeds</a></li>
-                            <li class="py-2"><a href="">Contact us</a></li>
+                            <li class="py-2 hover:scale-150 "><a href="">Find a pet</a></li>
+                            <li class="py-2 hover:scale-150 "><a href="">Breeds</a></li>
+                            <li class="py-2 hover:scale-150 "><a href="">Contact us</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5 class="text-white py-2">Follow Us</h5>
                         <div class="gap-9">
-                            <a href=""><i class="fa-brands px-2 fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands px-2 fa-instagram"></i></a>
-                           <a href=""> <i class="fa-brands px-2 fa-linkedin"></i></a>
-                            <a href=""><i class="fa-brands px-2 fa-youtube"></i></a>
+                            <a href=""><i class="hover:scale-150 fa-brands px-2 fa-facebook"></i></a>
+                            <a href=""><i class="hover:scale-150 fa-brands px-2 fa-instagram"></i></a>
+                            <a href=""> <i class="hover:scale-150 fa-brands px-2 fa-linkedin"></i></a>
+                            <a href=""><i class="hover:scale-150 fa-brands px-2 fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
