@@ -46,12 +46,7 @@
         <!-- navbar-section -->
         <nav class="bg-[#FFF9F4] border-b-4 lg:border-hidden mb-10">
             <div class=" mx-auto flex items-center justify-between px-6 md:px-14">
-                <div class="flex items-center">
-                    <img src="c1-assets/logo-header.png" alt="">
-                    <div class="hidden lg:flex">
-                        <h2 class="text-2xl font-sora">Browse<span class="text-[#F9DF8A]">4</span>Pets</h2>
-                    </div>
-                </div>
+              
                 <div class="hidden lg:flex">
                     <ul class="flex gap-4 font-sora">
                         <li><a href="">Find a pet</a></li>
@@ -170,9 +165,9 @@
                 <div class="mb-5">
                     <h5 class="text-2xl font-bold font-adlam-display">Trending Pet Products</h5>
                 </div>
-                <div class="flex flex-col lg:flex-row gap-8 justify-between  ">
+                <div class="flex flex-col lg:flex-row gap-8 gap-24 ">
                     <!-- left bg-[#F9DF8A] column -->
-                    <div class="relative card bg-[#F9DF8A] w-96 ">
+                    <div class=" card bg-[#F9DF8A]  ">
                         <div class="card-body">
                             <h2 class="card-title">T-Shirt For Dogs</h2>
                             <p>Discover a world of treats, toys, and <br> essentials handpicked for </p>
@@ -280,7 +275,7 @@
                         </div>
                         <div class="card card-side bg-base-100 ">
                             <figure>
-                                <img src="c1-assets/dog-cartoon.png" alt="dog-cartoon" />
+                                <img class="" src="c1-assets/dog-cartoon.png" alt="dog-cartoon" />
                             </figure>
                             <div class="card-body">
                                 <div class="flex items-center">
@@ -317,13 +312,13 @@
                 <div class="mb-5">
                     <h5 class="text-2xl font-bold font-adlam-display">Everyday low Price</h5>
                 </div>
-                <div class="flex bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-lg">
-                    <div class="left flex flex-col lg:flex-row items-center px-6 lg:px-16">
-                        <div>
-                            <small>Under Price</small>
-                            <h2 class="text-lg font-bold">Pet Grooming Mitt</h2>
+                <div class="flex flex-col lg:flex-row gap-24   ">
+                    <div class="w-2/3 left flex flex-col lg:flex-row bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-lg items-center px-6 lg:px-16">
+                        <div class="">
+                            <small class="p-3">Under Price</small>
+                            <h2 class="text-lg  font-bold">Pet Grooming Mitt</h2>
                             <small class="text-white font-bold">(Easy Hair Removal)</small>
-                            <h1 class="text-2xl font-bold">$7.99</h1>
+                            <h1 class="text-2xl p-3 font-bold">$7.99</h1>
 
                         </div>
                         <div>
@@ -332,7 +327,17 @@
 
                     </div>
                     <div class="right">
-
+                        <div class=" relative card bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-lg ">
+                            <div class="card-body">
+                                <h2 class="card-title">T-Shirt For Dogs</h2>
+                                <h1 class="text-2xl text-[#FFDC26] font-bold">$7.99</h1>
+    
+                                <div class=" card-actions justify-end">
+    
+                                    <img src="c1-assets/cute-pet-mid.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -343,6 +348,39 @@
 
 
     <footer>
+        <section class="bg-purple-500">
+            <div class="mx-auto py-8 px-6 md:px-14">
+                     <!-- footer content -->
+                <div class="flex mt-32 flex-col lg:flex-row justify-between">
+                    <div>
+                        <div class="flex items-center">
+                            <img class="text-black" src="c1-assets/logo-header.png" alt="">
+                            <div class=" lg:flex">
+                                <h2 class="text-2xl font-sora">Browse<span class="text-white">4</span>Pets</h2>
+                            </div>
+                        </div>
+                        <p class="text-gray-200 py-5">Discover a world of treats, toys, and <br> essentials handpicked for your furry  <br> friends</p>
+                    </div>
+                    <div>
+                        <ul class=" text-white gap-16 font-sora">
+                            <li class="py-2" ><a  href="">Find a pet</a></li>
+                            <li class="py-2"><a href="">Breeds</a></li>
+                            <li class="py-2"><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-white py-2">Follow Us</h5>
+                        <div class="gap-9">
+                            <i class="fa-brands px-2 fa-facebook"></i>
+                            <i class="fa-brands px-2 fa-instagram"></i>
+                            <i class="fa-brands px-2 fa-linkedin"></i>
+                            <i class="fa-brands px-2 fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </footer>
 </body>
